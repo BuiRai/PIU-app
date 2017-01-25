@@ -25,6 +25,20 @@ page-song-detail {
 			color: #fff;
 		}
 
+		.level {
+			position: absolute;
+			bottom: 30%;
+			left: -6%;
+			font-size: 3.0em;
+			width: 100%;
+			font-weight: bold;
+			color: #fff;
+		}
+
+		.item-inner {
+			border-bottom: none !important;
+		}
+
 		.card-subtitle {
 			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+0,000000+50,000000+100,000000+100,000000+100&0+0,0.4+0,1+50,0.4+100,0+100,0.4+100 */
 			background: -moz-linear-gradient(left,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
@@ -37,5 +51,15 @@ page-song-detail {
 			width: 100%;
 			color: #fff;
 		}
+	}
+
+	ion-card {
+		width: 100% !important;
+		margin: 0px !important;
+	}
+
+	ion-col, ion-item {
+		padding: 0px !important;
+		margin: 0px !important;
 	}
 }

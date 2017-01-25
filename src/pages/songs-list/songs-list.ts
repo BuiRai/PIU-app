@@ -15,7 +15,11 @@ export class SongsListPage {
 				title: 'God Mode',
 				artist: 'Nato',
 				bpm: 152,
-				banner: 'assets/images/godMode.jpg'
+				banner: 'assets/images/godMode.jpg',
+				levels: {
+					singles: [1,5,10,16,19,22],
+					doubles: [4,12,18,24,21]
+				}
 			});
 		}
 	}

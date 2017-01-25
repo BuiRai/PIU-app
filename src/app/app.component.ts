@@ -12,14 +12,14 @@ export class MyApp {
 	@ViewChild(Nav) nav:  Nav;
 	// make SongsList the root (or first) page
 	rootPage = SongsListPage;
-	pages: Array<{title: string, component: any}>;
+	pages: Array<{iconName: string, title: string, component: any}>;
 
 	constructor(public platform: Platform, public menu: MenuController) {
 		this.initializeApp();
 
 		// set our app's pages
 		this.pages = [
-			{ title: 'Songs list', component: SongsListPage }
+			{ iconName: 'musical-notes', title: 'Songs list', component: SongsListPage }
 		];
 	}
 

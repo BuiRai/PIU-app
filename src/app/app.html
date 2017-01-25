@@ -1,13 +1,13 @@
 <ion-menu [content]="content">
-	<ion-header>
-		<ion-toolbar>
-			<ion-title>Pages</ion-title>
-		</ion-toolbar>
-	</ion-header>
 	<ion-content>
+		<img src="assets/images/bannerNav.jpg" class="headerNavbar">
 		<ion-list>
-			<button ion-item *ngFor="let page of pages" (click)=openPage(page)>
-				{{ page.title }}
+			<!-- <ion-item>
+				<ion-icon name="menu" item-left></ion-icon>
+			</ion-item> -->
+			<button ion-item *ngFor="let page of pages" (click)=openPage(page) class="menuItem">
+				<ion-icon name="{{ page.iconName }}"></ion-icon>
+				<span>{{ page.title }}</span>
 			</button>
 		</ion-list>
 	</ion-content>
