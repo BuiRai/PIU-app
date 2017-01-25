@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavParams, Slides } from 'ionic-angular';
+import { NavParams, Slides, NavController } from 'ionic-angular';
+import { StatisticSongLevelPage } from '../statistics-song-level/statistics-song-level';
 
 @Component({
 	selector: 'page-song-detail',
@@ -11,7 +12,7 @@ export class SongDetailPage {
 	song: any;
 	currentSlideIndex: number;
 
-	constructor(private navParams: NavParams){
+	constructor(private navParams: NavParams, private navCtrl: NavController){
 		// If we navigated to this page, we will have an item available as a nav param
 		this.song = navParams.get('song');
 		this.currentSlideIndex = 0;
@@ -19,6 +20,13 @@ export class SongDetailPage {
 
 	slideChanged(){
 		this.currentSlideIndex = this.slides.getActiveIndex();
-		console.log("Current index is", this.currentSlideIndex);
+	}
+
+	levelTapped(event, song, level, mode){
+		this.navCtrl.push(StatisticSongLevelPage, {
+			song: song,
+			level: level,
+			mode: mode
+		});
 	}
 }

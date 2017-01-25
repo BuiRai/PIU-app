@@ -1,0 +1,25 @@
+.header-statistic-song-level {
+	ion-card {
+		position: relative;
+		text-align: center;
+	}
+
+	.level {
+		position: absolute;
+		top: 30%;
+		left: 0%;
+		font-size: 5.0em;
+		width: 100%;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	.item-inner {
+		border-bottom: none !important;
+	}
+}
+
+.grade {
+	font-size: 4em;
+	color: #21C914;
+}

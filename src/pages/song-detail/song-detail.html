@@ -3,7 +3,7 @@
 		<button ion-button icon-only menuToggle>
 			<ion-icon name="menu"></ion-icon>
 		</button>
-		<ion-title>Songs List</ion-title>
+		<ion-title>Songs Detail</ion-title>
 	</ion-navbar>
 </ion-header>
 
@@ -21,7 +21,7 @@
 			<template [ngIf]="i % 3 === 0">
 				<ion-row>
 					<ion-col width-33 *ngIf="i < song.levels.singles.length">
-						<ion-item class="card-background-page">
+						<ion-item (click)="levelTapped($event, song, song.levels.singles[i], 'single')" class="card-background-page">
 							<img src="assets/images/singleLevel.png">
 							<div class="level" text-center>
 								{{ song.levels.singles[i] }}
@@ -29,7 +29,7 @@
 						</ion-item>
 					</ion-col>
 					<ion-col width-33 *ngIf="i + 1 < song.levels.singles.length">
-						<ion-item class="card-background-page">
+						<ion-item (click)="levelTapped($event, song, song.levels.singles[i+1], 'single')" class="card-background-page">
 							<img src="assets/images/singleLevel.png">
 							<div class="level" text-center>
 								{{ song.levels.singles[i+1] }}
@@ -37,7 +37,7 @@
 						</ion-item>
 					</ion-col>
 					<ion-col width-33 *ngIf="i + 2 < song.levels.singles.length">
-						<ion-item class="card-background-page">
+						<ion-item (click)="levelTapped($event, song, song.levels.singles[i+2], 'single')" class="card-background-page">
 							<img src="assets/images/singleLevel.png">
 							<div class="level" text-center>
 								{{ song.levels.singles[i+2] }}
@@ -51,7 +51,7 @@
 			<template [ngIf]="i % 3 === 0">
 				<ion-row>
 					<ion-col width-33 *ngIf="i < song.levels.doubles.length">
-						<ion-item class="card-background-page">
+						<ion-item (click)="levelTapped($event, song, song.levels.doubles[i], 'double')" class="card-background-page">
 							<img src="assets/images/doubleLevel.png">
 							<div class="level" text-center>
 								{{ song.levels.doubles[i] }}
@@ -59,7 +59,7 @@
 						</ion-item>
 					</ion-col>
 					<ion-col width-33 *ngIf="i + 1 < song.levels.doubles.length">
-						<ion-item class="card-background-page">
+						<ion-item (click)="levelTapped($event, song, song.levels.doubles[i+1], 'double')" class="card-background-page">
 							<img src="assets/images/doubleLevel.png">
 							<div class="level" text-center>
 								{{ song.levels.doubles[i+1] }}
@@ -67,7 +67,7 @@
 						</ion-item>
 					</ion-col>
 					<ion-col width-33 *ngIf="i + 2 < song.levels.doubles.length">
-						<ion-item class="card-background-page">
+						<ion-item (click)="levelTapped($event, song, song.levels.doubles[i+2], 'double')" class="card-background-page">
 							<img src="assets/images/doubleLevel.png">
 							<div class="level" text-center>
 								{{ song.levels.doubles[i+2] }}
