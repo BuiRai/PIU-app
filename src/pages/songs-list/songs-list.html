@@ -16,7 +16,7 @@
 			<h2>{{song.title}}</h2>
 			<p>{{song.artist}}</p>
 			<p>{{song.bpm}}</p>
-			<button ion-button clear item-right>View</button>
+			<button ion-button clear item-right (click)="itemTapped($event, song)">View</button>
 		</ion-item>
 	</ion-list>
 </ion-content>

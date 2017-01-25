@@ -1,0 +1,41 @@
+page-song-detail {
+	.card-background-page {
+		ion-card {
+			position: relative;
+			text-align: center;
+
+			img {
+				opacity:0.9;
+			}
+
+		}
+
+		.card-title {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+0,000000+50,000000+100,000000+100,000000+100&0+0,0.4+0,1+50,0.4+100,0+100,0.4+100 */
+			background: -moz-linear-gradient(left,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=1 ); /* IE6-9 */
+
+			position: absolute;
+			bottom: 14%;
+			font-size: 2.0em;
+			width: 100%;
+			font-weight: bold;
+			color: #fff;
+		}
+
+		.card-subtitle {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+0,000000+50,000000+100,000000+100,000000+100&0+0,0.4+0,1+50,0.4+100,0+100,0.4+100 */
+			background: -moz-linear-gradient(left,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=1 ); /* IE6-9 */
+			font-size: 1.0em;
+			position: absolute;
+			bottom: 5%;
+			width: 100%;
+			color: #fff;
+		}
+	}
+}

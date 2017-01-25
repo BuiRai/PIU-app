@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { SongDetailPage } from '../song-detail/song-detail';
 
 @Component({
 	templateUrl: 'songs-list.html'
@@ -6,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class SongsListPage {
 	songs: Array<any>;
-	constructor(){
+	constructor(public navCtrl: NavController){
 		this.songs = [];
 		for (var i = 0; i < 10; ++i) {
 			this.songs.push({
@@ -16,5 +18,11 @@ export class SongsListPage {
 				banner: 'assets/images/godMode.jpg'
 			});
 		}
+	}
+
+	itemTapped(event, song){
+		this.navCtrl.push(SongDetailPage, {
+			song: song
+		});
 	}
 }
